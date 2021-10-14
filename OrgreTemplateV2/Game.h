@@ -11,6 +11,7 @@
 using namespace Ogre;
 using namespace OgreBites;
 
+
 class FrameListenerObserver : public Ogre::FrameListener
 {
 private:
@@ -27,26 +28,70 @@ public:
     std::shared_ptr<Ball> ball;
 };
 
+/// Game class
+///
+/// Main base class for the game. Inherits from Application Listener and Input Listener. Any type of keyboard/mouse event based entities should be done from here
+/// @see Bat
+/// @see Ball
 class Game
     : public ApplicationContext
     , public InputListener
 {
 public:
-
+    /// Constructor
+    ///
+    /// called in main.cpp .
     Game();
+
+    /// Virtual Destructor
+    ///
+    /// called after application quits.
     virtual ~Game() {}
 
-    //bool frameStarted(const FrameEvent& evt);
+    /// called when key is pressed.
+    /// 
+    /// @returns boolean always true.
+    /// @param evt reference to keyboard event.
     bool keyPressed(const KeyboardEvent& evt);
+
+
     void refreshUserInterface();
+
+    /// called when the game is constructed.
+    /// 
+    /// @param no parameters
     void setup();
+
+    /// creates the bat, ball and lights in the game scene.
+    /// 
+    /// @returns no return type
+    /// @param no parameters
     void createScene();
     void createCamera();
     void createUI();
+
+    /// refresh all Labels in the Game UI.
+    /// 
+    /// @returns no return type
+    /// @param no parameters
     void updateUI();
-    void GameOverUI();
+
+    /// checks for the movement of the ball in the game class
+    /// 
+    /// @returns no return type
+    /// @param no parameters
     void BallMovement();
+
+    /// checks collisions of the ball whether its with the paddle or the boundaries.
+    /// 
+    /// @returns no return type
+    /// @param (batX) recieves the x position of the paddle.
     void CheckCollision(float batX);
+
+    /// Creates the frame listener for any updates.
+    /// 
+    /// @returns no return type
+    /// @param no parameters
     void createFrameListener();
 
     OgreBites::TrayManager* mTrayMgr;
