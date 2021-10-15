@@ -94,37 +94,117 @@ public:
     /// @param no parameters
     void createFrameListener();
 
+    /**
+    * @brief Tray Manager for the GUI.
+    */
     OgreBites::TrayManager* mTrayMgr;
+
+    /**
+    * @brief Tray listener used for GUI.
+    */
     OgreBites::TrayListener myTrayListener;
+
+    /**
+   * @brief Graphic User Interface label used to render my name.
+   */
     OgreBites::Label* m_NameLabel;
+
+    /**
+   * @brief Graphic User Interface label used as fps title.
+   */
     OgreBites::Label* m_FpsLabel;
+
+    /**
+   * @brief Graphic User Interface label used as fps digits.
+   */
     OgreBites::Label* m_Fps;
 
+    /**
+   * @brief Graphic User Interface label used as score title.
+   */
     OgreBites::Label* m_ScoreLabel;
+
+    /**
+   * @brief Graphic User Interface label used as score digits.
+   */
     OgreBites::Label* m_Score;
 
+    /**
+   * @brief Graphic User Interface label used as time update title
+   */
     OgreBites::Label* m_TULabel;
+
+    /**
+   * @brief Graphic User Interface label used as time update digits
+   */
     OgreBites::Label* m_TU;
 
+    /**
+   * @brief Graphic User Interface label used as lives title
+   */
     OgreBites::Label* m_LivesLabel;
+
+    /**
+   * @brief Graphic User Interface label used as lives digit.
+   */
     OgreBites::Label* m_Lives;
 
+    /**
+    * @brief A reference to the ball.
+    * @see Ball
+    */
     std::shared_ptr<Ball> m_ball;
+
+    /**
+    * @brief A reference to the bat.
+    * @see Bat
+    */
     std::shared_ptr<Bat> m_bat;
 
 private:
+
+    /**
+    * @brief A reference to the ball scene node passed to the FrameListener.
+    */
     SceneNode* ballNode;
+
+    /**
+    * @brief A reference to the Scene Manager
+    */
     SceneManager* scnMgr;
+
+    /**
+    * @brief A reference root of the ogre class.
+    */
     Root* root;
 
+    /**
+    * @brief game score
+    */
     int score = 0;
+
+    /**
+    * @brief lives counter
+    */
     int lives = 5;
 
+    /**
+    * @brief bool variable that determines if game over (if GameOver = true, Game Over).
+    */
     bool GameOver = false;
 
+    /**
+    * @brief velocity for the Ball Scene Node
+    */
     float velX = 4.f;
 
+    /**
+    * @brief velocity for the Ball Scene Node
+    */
     float velY = 4.f;
 
+    /**
+    * @brief character stream for setting the captions for all GUI elements.
+    */
     char buffer[50];
 };

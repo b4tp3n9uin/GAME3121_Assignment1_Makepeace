@@ -3,7 +3,6 @@
 
 bool FrameListenerObserver::frameStarted(const Ogre::FrameEvent& evt)
 {
-    //_node->translate(Ogre::Vector3(0.1, 0, 0));
     return true;
 }
 

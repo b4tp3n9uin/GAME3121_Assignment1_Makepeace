@@ -1,0 +1,52 @@
+\hypertarget{_bat_8h_source}{}\doxysection{Bat.\+h}
+\label{_bat_8h_source}\index{OrgreTemplateV2/Bat.h@{OrgreTemplateV2/Bat.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}Ogre.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}OgreApplicationContext.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}OgreInput.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}OgreRTShaderSystem.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}OgreTrays.h"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_bat}{Bat}}}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     Ogre::SceneNode* bat\_Model;}
+\DoxyCodeLine{18     }
+\DoxyCodeLine{22     Ogre::Vector2 velocity;}
+\DoxyCodeLine{23     }
+\DoxyCodeLine{27     Ogre::Vector2 position;}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     }
+\DoxyCodeLine{30 \textcolor{keyword}{public}:}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{36     \mbox{\hyperlink{class_bat_ac231b3a270f82b72dace8be983a6ee6c}{Bat}}(Ogre::Entity* bat\_Entity, Ogre::SceneManager* m\_SceneManager);}
+\DoxyCodeLine{37     }
+\DoxyCodeLine{41     \mbox{\hyperlink{class_bat_ac231b3a270f82b72dace8be983a6ee6c}{Bat}}();}
+\DoxyCodeLine{42     }
+\DoxyCodeLine{46     \mbox{\hyperlink{class_bat_a818026309d0a5f96b92427b5f46ba47d}{\string~Bat}}();}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{52     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_bat_a58832b8ae0f5d2d507b59da0c3f2fc0f}{posX}} = 0.0f;}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{58     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_bat_a99853cf06957a6b40bf137413c26e68f}{posY}} = -\/20.f;}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{64     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_bat_a32a2a4f0afc0a515f02b20beefeca42c}{speed}} = 2.0f;}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{70     Ogre::SceneNode* \mbox{\hyperlink{class_bat_a445b88c2fc69e68d05c3c1f46a58d0ae}{GetModle}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{76     Ogre::Vector2 \mbox{\hyperlink{class_bat_a335efe11a237448d9bc5edb72d323de0}{GetVelocity}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{82     Ogre::Vector2 \mbox{\hyperlink{class_bat_a4ba71627c682520b341157d8d5b3ff3b}{GetPosition}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{88     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_bat_a8d05a631d0633f8adf9f026dc21605a6}{SetVelocity}}(Ogre::Vector2 vel);}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{94     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_bat_a9dbda7d49a6ddf3a64943ce1bcf5d5ad}{SetPosition}}(Ogre::Vector3 pos);}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{101     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_bat_a9c360e9dcebe3e6d711251ad9da24a9e}{Update}}(\textcolor{keywordtype}{float} deltaTime);}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104 \};}
+\DoxyCodeLine{105 }
+
+\end{DoxyCode}

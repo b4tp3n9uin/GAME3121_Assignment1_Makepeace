@@ -1,0 +1,227 @@
+\hypertarget{class_ball}{}\doxysection{Ball Class Reference}
+\label{class_ball}\index{Ball@{Ball}}
+
+
+{\ttfamily \#include $<$Ball.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ball_abaac75e3793ce71a0896f752686377e0}{Ball}} (Ogre\+::\+Entity $\ast$ball\+\_\+\+Entity, Ogre\+::\+Scene\+Manager $\ast$m\+\_\+\+Scene\+Manager)
+\item 
+\mbox{\hyperlink{class_ball_a86a144d3dad6c953e422e32435923bbb}{Ball}} ()
+\item 
+\mbox{\hyperlink{class_ball_a20f2f6ac0bf648f406a8e12e63429fcd}{$\sim$\+Ball}} ()
+\item 
+Ogre\+::\+Scene\+Node $\ast$ \mbox{\hyperlink{class_ball_aaac382f52f4fd344de903adb91789f2a}{Get\+Modle}} () const
+\item 
+Ogre\+::\+Vector2 \mbox{\hyperlink{class_ball_a6437a47d3dd7d087bfd325bb8d9c614b}{Get\+Velocity}} () const
+\item 
+Ogre\+::\+Vector2 \mbox{\hyperlink{class_ball_a7c90d12d5baf101a704b7d02d030734a}{Get\+Position}} () const
+\item 
+void \mbox{\hyperlink{class_ball_a07239a15df43c73bef6320d25a46c272}{Set\+Velocity}} (Ogre\+::\+Vector2 vel)
+\item 
+void \mbox{\hyperlink{class_ball_abfa5751826e50331956cd9a379c9aff8}{Set\+Position}} (Ogre\+::\+Vector3 pos)
+\item 
+void \mbox{\hyperlink{class_ball_a379271298874e9376933f9b547035637}{Update}} (float delta\+Time)
+\item 
+void \mbox{\hyperlink{class_ball_a337ed3ee7f30b1a17cb48bdb7f8c76bf}{Check\+Bounds}} (float x, float y)
+\item 
+void \mbox{\hyperlink{class_ball_ab16d8f8c98ddd13ed0350d40cf8e104e}{Reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ball_ae8ecc4477370fdec7bb9f920a504880c}\label{class_ball_ae8ecc4477370fdec7bb9f920a504880c}} 
+Ogre\+::\+Vector2 {\bfseries velocity}
+\begin{DoxyCompactList}\small\item\em (velocity) Current velocity of the ball. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Pong \mbox{\hyperlink{class_ball}{Ball}}
+
+The class that manages the ball in Pong 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ball_abaac75e3793ce71a0896f752686377e0}\label{class_ball_abaac75e3793ce71a0896f752686377e0}} 
+\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Ball()}{Ball()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ball\+::\+Ball (\begin{DoxyParamCaption}\item[{Ogre\+::\+Entity $\ast$}]{ball\+\_\+\+Entity,  }\item[{Ogre\+::\+Scene\+Manager $\ast$}]{m\+\_\+\+Scene\+Manager }\end{DoxyParamCaption})}
+
+Constructor for the ball class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ball\+\_\+\+Entity} & A refrence to the entity you want to use \\
+\hline
+{\em scn\+Mgr} & A refrence to the scene managerwhat ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ball_a86a144d3dad6c953e422e32435923bbb}\label{class_ball_a86a144d3dad6c953e422e32435923bbb}} 
+\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Ball()}{Ball()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ball\+::\+Ball (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ball_a20f2f6ac0bf648f406a8e12e63429fcd}\label{class_ball_a20f2f6ac0bf648f406a8e12e63429fcd}} 
+\index{Ball@{Ball}!````~Ball@{$\sim$Ball}}
+\index{````~Ball@{$\sim$Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{$\sim$Ball()}{~Ball()}}
+{\footnotesize\ttfamily Ball\+::$\sim$\+Ball (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ball_a337ed3ee7f30b1a17cb48bdb7f8c76bf}\label{class_ball_a337ed3ee7f30b1a17cb48bdb7f8c76bf}} 
+\index{Ball@{Ball}!CheckBounds@{CheckBounds}}
+\index{CheckBounds@{CheckBounds}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{CheckBounds()}{CheckBounds()}}
+{\footnotesize\ttfamily void Ball\+::\+Check\+Bounds (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+checkbounds
+
+performs an AABB collision test and deflects ball velocity accordingly 
+\begin{DoxyParams}{Parameters}
+{\em (x)} & check the x position of ball. \\
+\hline
+{\em (y)} & check the y position of ball. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ball_aaac382f52f4fd344de903adb91789f2a}\label{class_ball_aaac382f52f4fd344de903adb91789f2a}} 
+\index{Ball@{Ball}!GetModle@{GetModle}}
+\index{GetModle@{GetModle}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{GetModle()}{GetModle()}}
+{\footnotesize\ttfamily Ogre\+::\+Scene\+Node $\ast$ Ball\+::\+Get\+Modle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the Shape of the ball.
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the shape as a Ogre\+::\+Scene\+Node reference 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ball_a7c90d12d5baf101a704b7d02d030734a}\label{class_ball_a7c90d12d5baf101a704b7d02d030734a}} 
+\index{Ball@{Ball}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily Ogre\+::\+Vector2 Ball\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the ball\textquotesingle{}s position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the position as an Ogre\+::\+Vector2 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ball_a6437a47d3dd7d087bfd325bb8d9c614b}\label{class_ball_a6437a47d3dd7d087bfd325bb8d9c614b}} 
+\index{Ball@{Ball}!GetVelocity@{GetVelocity}}
+\index{GetVelocity@{GetVelocity}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{GetVelocity()}{GetVelocity()}}
+{\footnotesize\ttfamily Ogre\+::\+Vector2 Ball\+::\+Get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the ball\textquotesingle{}s velocity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the position as an Ogre\+::\+Vector2 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ball_ab16d8f8c98ddd13ed0350d40cf8e104e}\label{class_ball_ab16d8f8c98ddd13ed0350d40cf8e104e}} 
+\index{Ball@{Ball}!Reset@{Reset}}
+\index{Reset@{Reset}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Ball\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+reset
+
+this method is called the moment the ball leaves the boundary. 
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ball_abfa5751826e50331956cd9a379c9aff8}\label{class_ball_abfa5751826e50331956cd9a379c9aff8}} 
+\index{Ball@{Ball}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void Ball\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{Ogre\+::\+Vector3}]{pos }\end{DoxyParamCaption})}
+
+Set ball\textquotesingle{}s position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em (vel)} & position is to be set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ball_a07239a15df43c73bef6320d25a46c272}\label{class_ball_a07239a15df43c73bef6320d25a46c272}} 
+\index{Ball@{Ball}!SetVelocity@{SetVelocity}}
+\index{SetVelocity@{SetVelocity}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{SetVelocity()}{SetVelocity()}}
+{\footnotesize\ttfamily void Ball\+::\+Set\+Velocity (\begin{DoxyParamCaption}\item[{Ogre\+::\+Vector2}]{vel }\end{DoxyParamCaption})}
+
+Set ball\textquotesingle{}s velocity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em (vel)} & velocity is to be set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ball_a379271298874e9376933f9b547035637}\label{class_ball_a379271298874e9376933f9b547035637}} 
+\index{Ball@{Ball}!Update@{Update}}
+\index{Update@{Update}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Ball\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+update
+
+called once per frame ~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em (delta\+Time)} & time elapsed since previous frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return type 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Orgre\+Template\+V2/Ball.\+h\item 
+Orgre\+Template\+V2/Ball.\+cpp\end{DoxyCompactItemize}

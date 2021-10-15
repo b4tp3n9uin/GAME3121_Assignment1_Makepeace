@@ -1,0 +1,233 @@
+\hypertarget{class_bat}{}\doxysection{Bat Class Reference}
+\label{class_bat}\index{Bat@{Bat}}
+
+
+{\ttfamily \#include $<$Bat.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bat_a54d5cec836aed9401310ae89c003a6cd}{Bat}} (Ogre\+::\+Entity $\ast$bat\+\_\+\+Entity, Ogre\+::\+Scene\+Manager $\ast$m\+\_\+\+Scene\+Manager)
+\item 
+\mbox{\hyperlink{class_bat_ac231b3a270f82b72dace8be983a6ee6c}{Bat}} ()
+\item 
+\mbox{\hyperlink{class_bat_a818026309d0a5f96b92427b5f46ba47d}{$\sim$\+Bat}} ()
+\item 
+Ogre\+::\+Scene\+Node $\ast$ \mbox{\hyperlink{class_bat_a445b88c2fc69e68d05c3c1f46a58d0ae}{Get\+Modle}} () const
+\item 
+Ogre\+::\+Vector2 \mbox{\hyperlink{class_bat_a335efe11a237448d9bc5edb72d323de0}{Get\+Velocity}} () const
+\item 
+Ogre\+::\+Vector2 \mbox{\hyperlink{class_bat_a4ba71627c682520b341157d8d5b3ff3b}{Get\+Position}} () const
+\item 
+void \mbox{\hyperlink{class_bat_a8d05a631d0633f8adf9f026dc21605a6}{Set\+Velocity}} (Ogre\+::\+Vector2 vel)
+\item 
+void \mbox{\hyperlink{class_bat_a9dbda7d49a6ddf3a64943ce1bcf5d5ad}{Set\+Position}} (Ogre\+::\+Vector3 pos)
+\item 
+void \mbox{\hyperlink{class_bat_a9c360e9dcebe3e6d711251ad9da24a9e}{Update}} (float delta\+Time)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_bat_a58832b8ae0f5d2d507b59da0c3f2fc0f}{posX}} = 0.\+0f
+\begin{DoxyCompactList}\small\item\em bat\textquotesingle{}s x position \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_bat_a99853cf06957a6b40bf137413c26e68f}{posY}} = -\/20.f
+\begin{DoxyCompactList}\small\item\em bat\textquotesingle{}s y position \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_bat_a32a2a4f0afc0a515f02b20beefeca42c}{speed}} = 2.\+0f
+\begin{DoxyCompactList}\small\item\em speed of the bat \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Pong \mbox{\hyperlink{class_bat}{Bat}}
+
+The class that manages the player controlled Paddle 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bat_a54d5cec836aed9401310ae89c003a6cd}\label{class_bat_a54d5cec836aed9401310ae89c003a6cd}} 
+\index{Bat@{Bat}!Bat@{Bat}}
+\index{Bat@{Bat}!Bat@{Bat}}
+\doxysubsubsection{\texorpdfstring{Bat()}{Bat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Bat\+::\+Bat (\begin{DoxyParamCaption}\item[{Ogre\+::\+Entity $\ast$}]{bat\+\_\+\+Entity,  }\item[{Ogre\+::\+Scene\+Manager $\ast$}]{m\+\_\+\+Scene\+Manager }\end{DoxyParamCaption})}
+
+Constructor for the bat class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bat\+\_\+\+Entity} & A refrence to the entity you want to use. \\
+\hline
+{\em scn\+Mgr} & A refrence to the scene manager. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bat_ac231b3a270f82b72dace8be983a6ee6c}\label{class_bat_ac231b3a270f82b72dace8be983a6ee6c}} 
+\index{Bat@{Bat}!Bat@{Bat}}
+\index{Bat@{Bat}!Bat@{Bat}}
+\doxysubsubsection{\texorpdfstring{Bat()}{Bat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Bat\+::\+Bat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bat_a818026309d0a5f96b92427b5f46ba47d}\label{class_bat_a818026309d0a5f96b92427b5f46ba47d}} 
+\index{Bat@{Bat}!````~Bat@{$\sim$Bat}}
+\index{````~Bat@{$\sim$Bat}!Bat@{Bat}}
+\doxysubsubsection{\texorpdfstring{$\sim$Bat()}{~Bat()}}
+{\footnotesize\ttfamily Bat\+::$\sim$\+Bat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bat_a445b88c2fc69e68d05c3c1f46a58d0ae}\label{class_bat_a445b88c2fc69e68d05c3c1f46a58d0ae}} 
+\index{Bat@{Bat}!GetModle@{GetModle}}
+\index{GetModle@{GetModle}!Bat@{Bat}}
+\doxysubsubsection{\texorpdfstring{GetModle()}{GetModle()}}
+{\footnotesize\ttfamily Ogre\+::\+Scene\+Node $\ast$ Bat\+::\+Get\+Modle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the Shape of the bat.
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the shape as a Ogre\+::\+Scene\+Node reference 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bat_a4ba71627c682520b341157d8d5b3ff3b}\label{class_bat_a4ba71627c682520b341157d8d5b3ff3b}} 
+\index{Bat@{Bat}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!Bat@{Bat}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily Ogre\+::\+Vector2 Bat\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the position of the bat.
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the position as an Ogre\+::\+Vector2 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bat_a335efe11a237448d9bc5edb72d323de0}\label{class_bat_a335efe11a237448d9bc5edb72d323de0}} 
+\index{Bat@{Bat}!GetVelocity@{GetVelocity}}
+\index{GetVelocity@{GetVelocity}!Bat@{Bat}}
+\doxysubsubsection{\texorpdfstring{GetVelocity()}{GetVelocity()}}
+{\footnotesize\ttfamily Ogre\+::\+Vector2 Bat\+::\+Get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the bat\textquotesingle{}s velocity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the position as an Ogre\+::\+Vector2 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bat_a9dbda7d49a6ddf3a64943ce1bcf5d5ad}\label{class_bat_a9dbda7d49a6ddf3a64943ce1bcf5d5ad}} 
+\index{Bat@{Bat}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!Bat@{Bat}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void Bat\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{Ogre\+::\+Vector3}]{pos }\end{DoxyParamCaption})}
+
+Set bat\textquotesingle{}s position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em (pos)} & bat \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bat_a8d05a631d0633f8adf9f026dc21605a6}\label{class_bat_a8d05a631d0633f8adf9f026dc21605a6}} 
+\index{Bat@{Bat}!SetVelocity@{SetVelocity}}
+\index{SetVelocity@{SetVelocity}!Bat@{Bat}}
+\doxysubsubsection{\texorpdfstring{SetVelocity()}{SetVelocity()}}
+{\footnotesize\ttfamily void Bat\+::\+Set\+Velocity (\begin{DoxyParamCaption}\item[{Ogre\+::\+Vector2}]{vel }\end{DoxyParamCaption})}
+
+Set bat\textquotesingle{}s velocity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em (vel)} & velocity is to be set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bat_a9c360e9dcebe3e6d711251ad9da24a9e}\label{class_bat_a9c360e9dcebe3e6d711251ad9da24a9e}} 
+\index{Bat@{Bat}!Update@{Update}}
+\index{Update@{Update}!Bat@{Bat}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Bat\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+update
+
+called once per frame ~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em (delta\+Time)} & time elapsed since previous frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return type 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_bat_a58832b8ae0f5d2d507b59da0c3f2fc0f}\label{class_bat_a58832b8ae0f5d2d507b59da0c3f2fc0f}} 
+\index{Bat@{Bat}!posX@{posX}}
+\index{posX@{posX}!Bat@{Bat}}
+\doxysubsubsection{\texorpdfstring{posX}{posX}}
+{\footnotesize\ttfamily float Bat\+::posX = 0.\+0f}
+
+
+
+bat\textquotesingle{}s x position 
+
+\begin{DoxyNote}{Note}
+This variable is used for main game logic, do not modify it unless you want to break the game, or your curious about what its used for 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_bat_a99853cf06957a6b40bf137413c26e68f}\label{class_bat_a99853cf06957a6b40bf137413c26e68f}} 
+\index{Bat@{Bat}!posY@{posY}}
+\index{posY@{posY}!Bat@{Bat}}
+\doxysubsubsection{\texorpdfstring{posY}{posY}}
+{\footnotesize\ttfamily float Bat\+::posY = -\/20.f}
+
+
+
+bat\textquotesingle{}s y position 
+
+\begin{DoxyNote}{Note}
+This variable is used for main game logic, do not modify it unless you want to break the game, or your curious about what its used for 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_bat_a32a2a4f0afc0a515f02b20beefeca42c}\label{class_bat_a32a2a4f0afc0a515f02b20beefeca42c}} 
+\index{Bat@{Bat}!speed@{speed}}
+\index{speed@{speed}!Bat@{Bat}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Bat\+::speed = 2.\+0f}
+
+
+
+speed of the bat 
+
+\begin{DoxyNote}{Note}
+This variable is used for main game logic, do not modify it unless you want to break the game, or your curious about what its used for 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Orgre\+Template\+V2/Bat.\+h\item 
+Orgre\+Template\+V2/Bat.\+cpp\end{DoxyCompactItemize}
